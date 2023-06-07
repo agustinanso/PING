@@ -3,10 +3,47 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/dist/output.css" rel="stylesheet" />
+        <link defer href="/dist/output.css" rel="stylesheet" />
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- SCRIPTS -->
+        <script defer type="module" src="main.js"></script>
         <title>document</title>
     </head>
     <body>
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
+        <!-- Hero superior -->
+        <section class="container m-auto">
+            <div class="flex-col p-6 text-center mt-24">
+                <div>
+                    <img src="./public/logo.svg" class="m-auto" />
+                </div>
+                <div class="mt-20">
+                    <p class="font-[libre] text-[26px] text-[#969696] p-6 tracking-widest">
+                        We are launching <span class="font-bold text-[#151f29]">soon!</span>
+                    </p>
+                    <span class="font-light text-[20px]">Subscribe and get notified</span>
+                </div>
+                <form id="formulario-1">
+                    <div class="mt-12">
+                        <input
+                            id="correo"
+                            type="email"
+                            placeholder="Your email address..."
+                            class="border border-[#969696] text-left rounded-full w-11/12 px-8 pt-5 pb-5 focus:outline-none focus:border-gray-600" />
+                        <button
+                            id="btnEnviar"
+                            class="w-11/12 bg-[#4f7df3] text-center rounded-full px-8 pt-4 pb-4 mt-5 font-[libre] font-normal text-[20px] text-white xl:hover:bg-[#d5dced] shadow-lg shadow-[#c2d3ff]">
+                            Notify Me
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </body>
 </html>
