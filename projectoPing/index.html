@@ -30,20 +30,66 @@
                     <span class="font-light text-[20px]">Subscribe and get notified</span>
                 </div>
                 <form id="formulario-1">
-                    <div class="mt-12">
-                        <input
-                            id="correo"
-                            type="email"
-                            placeholder="Your email address..."
-                            class="border border-[#969696] text-left rounded-full w-11/12 px-8 pt-5 pb-5 focus:outline-none focus:border-gray-600" />
-                        <button
-                            id="btnEnviar"
-                            class="w-11/12 bg-[#4f7df3] text-center rounded-full px-8 pt-4 pb-4 mt-5 font-[libre] font-normal text-[20px] text-white xl:hover:bg-[#d5dced] shadow-lg shadow-[#c2d3ff]">
-                            Notify Me
-                        </button>
+                    <div class="mt-12 sm:justify-center sm:text-left sm:flex sm:flex-row">
+                        <div class="sm:flex sm:flex-col sm:justify-start sm:w-4/12">
+                            <div class="sm:p-4">
+                                <input
+                                    id="correo"
+                                    type="email"
+                                    placeholder="Your email address..."
+                                    class="border border-[#969696] text-left rounded-full w-11/12 px-8 pt-5 pb-5 focus:outline-none focus:border-gray-600" />
+                            </div>
+                            <!-- ALERTS -->
+                            <div class="relative">
+                                <p
+                                    id="alertRoja"
+                                    class="font-[libre] text-red-500 text-lg hidden mt-[8px] sm:absolute sm:ml-10 sm:mt-0">
+                                    Please provide a valid email adress
+                                </p>
+                                <p
+                                    id="alertVerde"
+                                    class="font-[libre] text-emerald-600 text-xl hidden mt-[8px] sm:absolute sm:ml-10 sm:mt-0">
+                                    Your registration was successful!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Submit -->
+                        <div class="sm:w-1/5 sm:items-start sm:p-4">
+                            <button
+                                id="btnEnviar"
+                                class="w-11/12 bg-[#4f7df3] text-center rounded-full px-8 pt-4 pb-4 mt-5 font-[libre] font-normal text-[20px] text-white xl:hover:bg-[#d5dced] shadow-lg shadow-[#c2d3ff] sm:mt-0 sm:w-full">
+                                Notify Me
+                            </button>
+                        </div>
                     </div>
+
+                    <!-- Formulario -->
                 </form>
+                <div class="mt-28 p-6 xl:justify-center">
+                    <img src="./public/illustration-dashboard.png" class="xl:m-auto" />
+                </div>
+                <div class="flex mt-24 text-center justify-center gap-11">
+                    <img
+                        src="./public/facebook.svg"
+                        class="w-12 h-12 p-2 border border-[#969696] rounded-full" />
+                    <img
+                        src="./public/twitter.svg"
+                        class="w-12 h-12 p-2 border border-[#969696] rounded-full" />
+                    <img
+                        src="./public/instagram.svg"
+                        class="w-12 h-12 p-2 border border-[#969696] rounded-full" />
+                </div>
             </div>
         </section>
+
+        <!-- footer -->
+        <footer class="container mt-28 mb-28 xl:justify-center xl:m-auto xl:mt-32 xl:p-6">
+            <div class="flex justify-center">
+                <img src="./public/copy.png" class="p-2 w-9 h-9" />
+                <p class="text-[16px] justify-center text-[#969696] mt-[2px]">
+                    Copyright Ping. All rights reserverd.
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
